@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <script>
+        function teste(){
+            var Usuario = document.getElementById("davi1").value;
+            var Senha = document.getElementById("davi2").value;
+            alert(Usuario + Senha);
+
+            if (Usuario == "admin" && Senha == "123"){
+                
+                alert("Sucesso")
+                window.location.href = "pagina.html";
+            }
+            else alert("Sem Sucesso!");
+        }
+    </script>
+
+</head>
+<body>
+
+    <p> Usuario: </p>
+    <input type="text" id="davi1">
+
+    <p> Senha: </p>
+    <input type="password" id="davi2">
+
+    <button onclick="teste()">Entrar</button>
+
+</body>
+</html>
